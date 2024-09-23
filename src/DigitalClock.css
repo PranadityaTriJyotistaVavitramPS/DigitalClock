@@ -1,0 +1,57 @@
+body {
+    margin: 0; 
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    transition: background 1s ease, opacity 1s ease;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.clock-container{
+    backdrop-filter: blur(10px);
+    width: 100vh;
+    align-items: center;
+}
+
+.clock{
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
+}
+
+
+/* Background Image A: 14:00 - 21:59 */
+body.backgroundA {
+    background-image: url(Asset/background_pagi.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;  /* Width 100%, height 100vh */
+    background-attachment: fixed;
+}
+
+/* Background Image B: 22:00 - 05:59 */
+body.backgroundB {
+    background-image: url(Asset/background_siang.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;  /* Width 100%, height 100vh */
+    background-attachment: fixed;
+}
+
+/* Background Image C: 06:00 - 13:59 */
+body.backgroundC {
+    background-image: url(Asset/background_malem.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;  /* Width 100%, height 100vh */    
+    background-attachment: fixed;
+}
